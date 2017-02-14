@@ -1,0 +1,58 @@
+<resources>
+
+    <string name="default_stocks_yahoo" translatable="false">YHOO</string>
+    <string name="default_stocks_apple" translatable="false">AAPL</string>
+    <string name="default_stocks_microsoft" translatable="false">MSFT</string>
+    <string name="default_stocks_facebook" translatable="false">FB</string>
+    <string name="add_all_stocks">ADD ALL DEFAULT STOCKS</string>
+    <string name="add_new_stock">ADD NEW STOCK</string>
+
+    <string name="app_name" translatable="false">Stock Hawk</string>
+    <string name="pref_stocks_initialized_key" translatable="false">initialized</string>
+    <string name="pref_stocks_key" translatable="false">stocks</string>
+    <string name="pref_display_mode_key" translatable="false">displayMode</string>
+    <string name="pref_display_mode_default" translatable="false">@string/pref_display_mode_percentage_key</string>
+    <string name="pref_display_mode_absolute_key" translatable="false">absolute</string>
+    <string name="pref_display_mode_percentage_key" translatable="false">percentage</string>
+    <string name="action_change_units" translatable="false">@string/pref_display_mode_key</string>
+
+    <string name="error_no_network">No network connectivity!</string>
+    <string name="data_maybe_old">No network connectivity.\nData may be old!</string>
+    <string name="no_available_data_widget">There isn\'t available data</string>
+    <string name="no_available_data">There isn\'t available data.\nHit the floating action button to add new stocks.</string>
+    <string name="floating_button_content_description">Hit the button to add a new stock</string>
+    <string name="choose_or_insert_stock">Choose a default stock or insert new one.</string>
+    <string name="already_has_stock">Stock %s already in the database</string>
+    <string name="stock_not_found">Stock not found</string>
+    <string name="home_page">home page</string>
+    <string name="stock_behaviour_is_positivie">The stock trend is positive</string>
+    <string name="stock_behaviour_is_negative">The stock trend is negative</string>
+    <string name="progress_dialog_loading">Loading...</string>
+    <string name="price">stock price</string>
+    <string name="change">price variation</string>
+    <string name="percentage">percentage variation</string>
+
+    <string name="home_button_description">Hit to go back to home page</string>
+    <string name="error_no_stocks">No stocks added! Hit the floating action button to add one.</string>
+    <string name="no_network_load_old_data">There is not network connection.\nData may be old.</string>
+
+    <string name="no_network_message">Network currently not available</string>
+    <string name="close">Close</string>
+
+    <string name="dialog_title">Add Stock</string>
+    <string name="add_stock_content_description">Type a stock symbol</string>
+    <string name="dialog_hint">Symbol (e.g. %s</string>
+    <string name="hint_symbol" translatable="false">GOOG)</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_add">Add</string>
+
+    <string name="toast_stock_added_no_connectivity">Symbol %s added. Will refresh when network available.</string>
+    <string name="toast_no_connectivity">Will refresh when network available.</string>
+
+    <string name="no_data_available">No data available</string>
+
+    <string name="transition_chart">transitionChart</string>
+    <string name="title_activity_test">Test</string>
+
+
+</resources>

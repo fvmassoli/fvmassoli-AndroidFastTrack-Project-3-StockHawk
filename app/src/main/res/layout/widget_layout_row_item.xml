@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="@dimen/widget_row_item_padding"
+    android:paddingStart="@dimen/widget_row_item_padding"
+    android:paddingRight="@dimen/widget_row_item_padding"
+    android:paddingEnd="@dimen/widget_row_item_padding"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/symbol"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/widget_row_item_padding"
+        android:paddingStart="@dimen/widget_row_item_padding"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:gravity="center_vertical" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:id="@+id/iv_frame"
+        android:paddingLeft="@dimen/widget_row_item_padding"
+        android:paddingStart="@dimen/widget_row_item_padding">
+        <ImageView
+            android:id="@+id/iv_trending"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/triangle_icon_side"
+            android:layout_height="@dimen/triangle_icon_side" />
+    </FrameLayout>
+
+
+</LinearLayout>

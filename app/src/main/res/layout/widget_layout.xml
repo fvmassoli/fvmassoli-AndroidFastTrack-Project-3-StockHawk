@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/header_view"
+        android:background="@color/colorPrimaryDark"
+        android:paddingLeft="@dimen/widget_heder_text_lef_margin"
+        android:paddingStart="@dimen/widget_heder_text_lef_margin"
+        android:paddingEnd="@dimen/widget_heder_text_lef_margin"
+        android:paddingRight="@dimen/widget_heder_text_lef_margin">
+        <ImageView
+            android:layout_width="@dimen/widget_icon_side"
+            android:layout_height="@dimen/widget_icon_side"
+            android:id="@+id/widget_icon"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/BodyText"
+            android:textColor="@color/white"
+            android:id="@+id/widget_header_title"
+            android:contentDescription="@string/app_name"
+            android:text="@string/app_name"
+            android:paddingLeft="@dimen/widget_heder_text_lef_margin"
+            android:paddingStart="@dimen/widget_heder_text_lef_margin"
+            android:paddingEnd="@dimen/widget_heder_text_lef_margin"
+            android:paddingRight="@dimen/widget_heder_text_lef_margin"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewWidget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_available_data_widget"
+        android:contentDescription="@string/no_available_data_widget"
+        android:textColor="@color/white"
+        android:textSize="@dimen/widget_empty_view_text_size"
+        android:visibility="gone"
+        android:padding="@dimen/widget_heder_text_lef_margin"
+        android:paddingStart="@dimen/widget_heder_text_lef_margin"
+        android:paddingEnd="@dimen/widget_heder_text_lef_margin"
+        android:paddingRight="@dimen/widget_heder_text_lef_margin"
+        android:paddingLeft="@dimen/widget_heder_text_lef_margin"
+        android:background="@color/colorPrimary"/>
+
+</LinearLayout>

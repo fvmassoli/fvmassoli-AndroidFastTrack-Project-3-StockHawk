@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?selectableItemBackground"
+    android:clickable="false"
+    android:layout_marginBottom="@dimen/activity_margin"
+    android:padding="@dimen/activity_margin"
+    app:cardBackgroundColor="@color/cardview_light_background"
+    app:cardCornerRadius="@dimen/card_radius"
+    app:elevation="@dimen/card_elevation"
+    app:cardPreventCornerOverlap="false">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/card_inner_layout_padding"
+    android:layout_marginEnd="@dimen/card_inner_layout_padding"
+    android:layout_marginStart="@dimen/card_inner_layout_padding"
+    android:background="@color/cardview_light_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/card_inner_layout_padding"
+        android:layout_marginEnd="@dimen/card_inner_layout_padding"
+        android:layout_marginStart="@dimen/card_inner_layout_padding">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        style="@style/DetailStockTextStyle"
+        android:id="@+id/price_txt"
+        android:text="@string/price"
+        android:contentDescription="@string/price"
+        android:nextFocusRight="@+id/price"
+        android:nextFocusLeft="@+id/percentage"
+        android:nextFocusDown="@+id/change_txt" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        style="@style/DetailStockTextStyle"
+        android:id="@+id/price"
+        android:nextFocusRight="@+id/change_txt"
+        android:nextFocusLeft="@+id/price_txt"
+        android:nextFocusDown="@+id/change"
+        tools:text="100"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/card_inner_layout_padding">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            style="@style/DetailStockTextStyle"
+            android:id="@+id/change_txt"
+            android:text="@string/change"
+            android:contentDescription="@string/change"
+            android:nextFocusLeft="@+id/price"
+            android:nextFocusRight="@+id/change"
+            android:nextFocusUp="@+id/price_txt"
+            android:nextFocusDown="@+id/percentage_txt"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            style="@style/DetailStockTextStyle"
+            android:id="@+id/change"
+            android:nextFocusLeft="@+id/change_txt"
+            android:nextFocusRight="@+id/percentage_txt"
+            android:nextFocusUp="@+id/price"
+            android:nextFocusDown="@+id/percentage"
+            tools:text="100"
+            android:layout_marginLeft="@dimen/card_inner_layout_padding"
+            android:layout_marginStart="@dimen/card_inner_layout_padding"
+            android:layout_marginEnd="@dimen/card_inner_layout_padding"
+            android:layout_marginRight="@dimen/card_inner_layout_padding"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/card_inner_layout_padding">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            style="@style/DetailStockTextStyle"
+            android:id="@+id/percentage_txt"
+            android:nextFocusLeft="@+id/change"
+            android:nextFocusRight="@+id/percentage"
+            android:nextFocusUp="@+id/change_txt"
+            android:text="@string/percentage"
+            android:contentDescription="@string/percentage" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            style="@style/DetailStockTextStyle"
+            android:id="@+id/percentage"
+            android:nextFocusLeft="@+id/percentage_txt"
+            android:nextFocusRight="@+id/price_txt"
+            android:nextFocusUp="@+id/change"
+            tools:text="100" />
+    </LinearLayout>
+</LinearLayout>
+
+    </android.support.v7.widget.CardView>

@@ -1,0 +1,49 @@
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_margin">@dimen/activity_horizontal_margin</dimen>
+    <dimen name="toolbar_icon_edn_margin">24dp</dimen>
+    <dimen name="app_bar_height">220dp</dimen>
+    <dimen name="listview_dialog_haight">150dp</dimen>
+    <dimen name="fab_margin">@dimen/activity_margin</dimen>
+    <dimen name="fab_elevation">6dp</dimen>
+    <dimen name="fab_pressed_translation_z">12dp</dimen>
+    <dimen name="dialog_icon_size">24dp</dimen>
+    <dimen name="card_radius">6dp</dimen>
+    <dimen name="card_elevation">12dp</dimen>
+    <dimen name="card_inner_layout_padding">6dp</dimen>
+    <dimen name="card_view_top_margin">6dp</dimen>
+    <dimen name="card_chart_height">120dp</dimen>
+    <dimen name="card_view_symbol_top_margin">32dp</dimen>
+    <dimen name="triangle_icon_side">24dp</dimen>
+    <dimen name="recycler_view_bottom_padding">56dp</dimen>
+    <dimen name="price_end_margin">10dp</dimen>
+    <dimen name="change_padding">3dp</dimen>
+    <dimen name="detail_chart_height">270dp</dimen>
+    <dimen name="detail_chart_parent_height">300dp</dimen>
+    <dimen name="empty_view_icon_side">56dp</dimen>
+    <dimen name="widget_icon_side">48dp</dimen>
+    <dimen name="widget_heder_text_lef_margin">6dp</dimen>
+    <dimen name="detail_toolbar_icon_start_margin">6dp</dimen>
+    <dimen name="add_stock_dialog_margin">4dp</dimen>
+    <dimen name="add_stock_dialog_top_margin">@dimen/activity_margin</dimen>
+    <dimen name="trend_icon_width">48dp</dimen>
+    <dimen name="detail_toolbar_trend_icon_side">44dp</dimen>
+    <dimen name="percent_change_text_style_size">10sp</dimen>
+    <dimen name="bid_price_text_style_size">20sp</dimen>
+    <dimen name="detail_stock_text_style_size">18sp</dimen>
+    <dimen name="stock_symbol_text_style_size">23sp</dimen>
+    <dimen name="card_text_size">20sp</dimen>
+    <dimen name="Subheading">15sp</dimen>
+    <dimen name="widget_empty_view_text_size">20sp</dimen>
+    <dimen name="Body1">15sp</dimen>
+    <dimen name="hint_text_size">12sp</dimen>
+    <dimen name="edit_text_padding_bottom">16dp</dimen>
+    <dimen name="edit_text_padding_top">8dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="widget_row_item_padding">12dip</dimen>
+    <dimen name="widget_min_width">180dp</dimen>
+    <dimen name="widget_min_height">40dp</dimen>
+    <dimen name="dialog_listview_item_height">48dp</dimen>
+
+</resources>

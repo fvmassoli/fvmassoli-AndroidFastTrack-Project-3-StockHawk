@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".detail_view.DetailActivity"
+    tools:ignore="MergeRootFrame"
+    android:background="@color/swiperefreshlayout_background_color">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/detail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+            <ImageView
+                android:layout_width="@dimen/detail_toolbar_trend_icon_side"
+                android:layout_height="@dimen/detail_toolbar_trend_icon_side"
+                android:id="@+id/toolbar_trend_icon"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/toolbar_icon_edn_margin"
+                android:layout_marginEnd="@dimen/toolbar_icon_edn_margin"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:padding="@dimen/activity_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/detail_recycler_view"
+        android:nextFocusDown="@+id/fab"
+        android:nextFocusUp="@+id/toolbar"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:contentDescription="@string/floating_button_content_description"
+        app:srcCompat="@drawable/fab_plus"
+        app:elevation="@dimen/fab_elevation"
+        app:fabSize="normal"
+        app:pressedTranslationZ="@dimen/fab_pressed_translation_z"
+        app:backgroundTint="@color/colorAccent"
+        android:nextFocusDown="@+id/toolbar"
+        android:nextFocusUp="@+id/recycler_view" />
+
+</android.support.design.widget.CoordinatorLayout>
