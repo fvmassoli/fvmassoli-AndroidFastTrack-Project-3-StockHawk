@@ -46,6 +46,7 @@ import static com.udacity.stockhawk.utilities.Constants.REMINDER_INTERVAL_SECOND
 import static com.udacity.stockhawk.utilities.Constants.STOCK_SYMBOL_IS_EMPTY;
 import static com.udacity.stockhawk.utilities.Constants.SYNC_FLEX_TIME_SECONDS;
 import static com.udacity.stockhawk.utilities.Constants.YEARS_OF_HISTORY;
+import static com.udacity.stockhawk.utilities.Constants.TAG;
 
 public final class QuoteSyncJob {
 
@@ -294,11 +295,11 @@ public final class QuoteSyncJob {
             }
 
         } catch (IOException exception) {
-
+            Log.d(TAG, exception.toString());
         } catch (Error error) {
-
+            throw new Error(error.toString());
         } catch (StringIndexOutOfBoundsException exception) {
-
+            throw new StringIndexOutOfBoundsException("StringIndexOutOfBoundsException  " + exception.toString());
         }
     }
 
